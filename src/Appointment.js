@@ -3,10 +3,17 @@ import React from "react";
 export const Appointment = ({ customer }) => 
   <div>{customer.firstName}</div>;
 
-export const AppointmentsDayView = () => 
+const unixTimestampToHours = timestamp => {
+    const [h, m] = new Date(timestamp).toTimeString().split(':');
+    return `${h}:${m}`;
+} 
+
+export const AppointmentsDayView = ({ appointments }) => 
   <div id="appointments-day-view">
-    <ol>
-      <li />
-      <li />
+    <ol key="appointments">
+      {appointments.map((appointment) => (
+          <li key={appointment.startsAt}>{unixTimestampToHours(appointment.startsAt)}</li>
+          )
+      )}
     </ol>
   </div>;
