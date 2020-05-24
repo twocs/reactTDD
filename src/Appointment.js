@@ -19,4 +19,4 @@ export const AppointmentsDayView = ({ appointments }) =>
     <div>
       <p>There are no appointments scheduled for today.</p>
     </div>
-  </div>;
+  </div>; 
