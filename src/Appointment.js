@@ -5,5 +5,8 @@ export const Appointment = ({ customer }) =>
 
 export const AppointmentsDayView = () => 
   <div id="appointments-day-view">
-    <ol />
+    <ol>
+      <li />
+      <li />
+    </ol>
   </div>;
