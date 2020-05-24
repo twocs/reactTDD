@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/twocs/reactTDD/issues"
   },
-  "homepage": "https://github.com/twocs/reactTDD#readme"
+  "homepage": "https://github.com/twocs/reactTDD#readme",
+  "devDependencies": {
+    "jest": "^26.0.1"
+  }
 }
