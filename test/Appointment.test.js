@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Appointment from '../src/Appointment';
+import { Appointment } from '../src/Appointment';
 
 describe('Appointment', () => {
   it('renders the customer\'s first name', () => {
       const customer = { firstName: 'Tom' };
-      const component = <Appointment customer={customer} />;
+      const component = <Appointment customer={ customer } />;
       
       const container = document.createElement('div');
       document.body.appendChild(container);
