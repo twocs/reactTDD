@@ -14,14 +14,11 @@ describe('Appointment', () => {
 });
 
 describe('Appointment', () => {
-    it.skip('renders the customer\'s first name', () => {
+    it('renders the customer\'s first name', () => {
         const customer = { firstName: 'Michael' };
-        const component = <Appointment customer={ customer } />;
-        
         const container = document.createElement('div');
-        document.body.appendChild(container);
-        
-        ReactDOM.render(component, container);
-        expect(document.body.textContent).toMatch('Michael');
+      
+        ReactDOM.render(<Appointment customer={ customer } />, container);
+        expect(container.textContent).toMatch('Michael');
     });
   });
