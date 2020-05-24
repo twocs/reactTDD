@@ -9,11 +9,13 @@ beforeEach(() => {
     container = document.createElement('div');
 })
 
+const render = component => ReactDOM.render(component, container);
+
 describe('Appointment', () => {
   it('renders the customer\'s first name', () => {
       customer = { firstName: 'Tom' };
       
-      ReactDOM.render(<Appointment customer={ customer } />, container);
+      render(<Appointment customer={ customer } />);
       expect(container.textContent).toMatch('Tom');
   });
 });
@@ -22,7 +24,7 @@ describe('Appointment', () => {
     it('renders the customer\'s first name', () => {
         customer = { firstName: 'Michael' };
       
-        ReactDOM.render(<Appointment customer={ customer } />, container);
+        render(<Appointment customer={ customer } />);
         expect(container.textContent).toMatch('Michael');
     });
   });
