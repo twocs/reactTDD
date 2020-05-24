@@ -40,6 +40,6 @@ describe("AppointmentsDayView", () => {
 
     it('renders a div with the correct id', () => {
         render(<AppointmentsDayView appointments={[]} />);
-        expect(container.querySelector('div#appointmentsDayView')).not.toBeNull();
+        expect(container.querySelector('div#appointments-day-view')).not.toBeNull();
     });
 });
