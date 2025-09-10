@@ -27,7 +27,7 @@
     "eslint": "^6.1.0",
     "eslint-plugin-react": "^7.20.0",
     "jest": "^26.0.1",
-    "react-scripts": "^3.4.1",
+    "react-scripts": "^5.0.1",
     "typescript": "^3.9.3",
     "yargs-parser": "^18.1.3"
   },
